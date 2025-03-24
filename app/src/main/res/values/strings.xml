@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TRPG</string>
+    <string name="character_sheet">キャラクターシート作成</string>
+    <string name="ability">能力</string>
+    <string name="Dice">サイコロ</string>
+    <string name="Full">一括で振る</string>
+    <string name="abiliy_value">能力値</string>
+</resources>
