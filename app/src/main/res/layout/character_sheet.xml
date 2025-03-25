@@ -18,48 +18,511 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="@string/ability"
-            android:textSize="25dp"/>
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:text="@string/ability"
+                android:textSize="25dp"
+                android:background="@drawable/shape_outer_frame"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:text="@string/Dice"
-            android:textSize="25dp"/>
+            <LinearLayout
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_outer_frame"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Full" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/Dice"
+                    android:textSize="25dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:text="@string/abiliy_value"
-            android:textSize="25dp"/>
+                <Button
+                    android:id="@+id/full_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/Full" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:text="@string/abiliy_value"
+                android:textSize="25dp" />
 
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_outer_frame"
+                android:paddingLeft="10dp"
+                android:text="@string/str"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="227dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_outer_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/str_dice1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/str_dice2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/str_dice3"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <Button
+                    android:id="@+id/str_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/shake" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/str_sum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""/>
+
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="60dp"
+            android:background="@drawable/shape_outer_frame">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_outer_frame"
+                android:paddingLeft="10dp"
+                android:text="@string/con"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_outer_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/con_dice1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/con_dice2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/con_dice3"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <Button
+                    android:id="@+id/con_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shake" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/con_sum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""/>
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_outer_frame"
+            android:paddingLeft="10dp"
+            android:text="@string/pow"
+            android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_outer_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pow_dice1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/pow_dice2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/pow_dice3"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <Button
+                    android:id="@+id/pow_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shake" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pow_sum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""/>
+
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_outer_frame"
+            android:paddingLeft="10dp"
+            android:text="@string/dex"
+            android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_outer_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dex_dice1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/dex_dice2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/dex_dice3"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <Button
+                    android:id="@+id/dex_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shake" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dex_sum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_outer_frame"
+            android:paddingLeft="10dp"
+            android:text="@string/app"
+            android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_outer_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/app_dice1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/app_dice2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/app_dice3"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <Button
+                    android:id="@+id/app_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shake" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/App_sum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@drawable/shape_outer_frame"
+            android:text="@string/siz"
+            android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_outer_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/siz_dice1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/siz_dice2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <Button
+                    android:id="@+id/siz_btn"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shake2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/app_sum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_outer_frame"
+            android:paddingLeft="10dp"
+            android:text="@string/Int"
+            android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_outer_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Int_dice1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/Int_dice2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <Button
+                    android:id="@+id/Int_btn"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shake2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Int_sum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_outer_frame"
+                android:paddingLeft="10dp"
+                android:text="@string/edu"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_outer_frame"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/edu_dice1"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/edu_dice2"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <ImageView
+                    android:id="@+id/edu_dice3"
+                    android:layout_width="51dp"
+                    android:layout_height="54dp"
+                    android:src="@drawable/blackbox_close_question" />
+
+                <Button
+                    android:id="@+id/edu_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/shake3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/edu_sum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_outer_frame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_outer_frame"
+            android:paddingLeft="10dp"
+            android:text="@string/assets"
+            android:textSize="17dp"/>
+
+        <LinearLayout
+            android:layout_width="237dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_outer_frame"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/assets_dice1"
+                android:layout_width="51dp"
+                android:layout_height="54dp"
+                android:src="@drawable/blackbox_close_question" />
+
+            <ImageView
+                android:id="@+id/assets_dice2"
+                android:layout_width="51dp"
+                android:layout_height="54dp"
+                android:src="@drawable/blackbox_close_question" />
+
+            <ImageView
+                android:id="@+id/assets_dice3"
+                android:layout_width="51dp"
+                android:layout_height="54dp"
+                android:src="@drawable/blackbox_close_question" />
+
+            <Button
+                android:id="@+id/assets_btn"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/shake" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/assets_sum"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""/>
+
+        </TableRow>
     </TableLayout>
 
 </LinearLayout>

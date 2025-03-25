@@ -5,4 +5,16 @@
     <string name="Dice">サイコロ</string>
     <string name="Full">一括で振る</string>
     <string name="abiliy_value">能力値</string>
+    <string name="str">STR\n(能力値)</string>
+    <string name="con">CON\n(体力)</string>
+    <string name="pow">POW\n(精神力)</string>
+    <string name="dex">DEX\n(俊敏性)</string>
+    <string name="app">APP\n(外見)</string>
+    <string name="siz">SIZ\n(体格)</string>
+    <string name="Int">INT\n(知性)</string>
+    <string name="edu">EDU\n(教育)</string>
+    <string name="assets">年収\n・財産</string>
+    <string name="shake">3D6</string>
+    <string name="shake2">2D6+6</string>
+    <string name="shake3">3D6+3</string>
 </resources>
