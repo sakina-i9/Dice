@@ -17,4 +17,10 @@
     <string name="shake">3D6</string>
     <string name="shake2">2D6+6</string>
     <string name="shake3">3D6+3</string>
+    <string name="nametext">名前を入力</string>
+    <string name="save">保存</string>
+    <string name="san">SAN値、ポイント</string>
+    <string name="item">項目</string>
+    <string name="formula">数式</string>
+    <string name="point">ポイント</string>
 </resources>
