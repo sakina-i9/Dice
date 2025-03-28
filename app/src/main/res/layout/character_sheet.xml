@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/character_sheet"
     android:layout_width="match_parent"
@@ -7,8 +8,8 @@
     tools:context=".CharacterSheetActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -62,6 +63,7 @@
                     android:layout_height="match_parent"
                     android:paddingLeft="5dp"
                     android:text="@string/abiliy_value"
+                    android:background="@drawable/shape_outer_frame"
                     android:textSize="25dp" />
 
             </TableRow>
@@ -114,7 +116,8 @@
                 <TextView
                     android:id="@+id/str_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
             </TableRow>
@@ -167,7 +170,8 @@
                 <TextView
                     android:id="@+id/con_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
             </TableRow>
 
@@ -219,7 +223,8 @@
                 <TextView
                     android:id="@+id/pow_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
             </TableRow>
@@ -272,7 +277,8 @@
                 <TextView
                     android:id="@+id/dex_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
             </TableRow>
@@ -325,7 +331,8 @@
                 <TextView
                     android:id="@+id/App_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
             </TableRow>
@@ -372,7 +379,8 @@
                 <TextView
                     android:id="@+id/app_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
             </TableRow>
@@ -419,7 +427,8 @@
                 <TextView
                     android:id="@+id/Int_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
             </TableRow>
@@ -472,7 +481,8 @@
                 <TextView
                     android:id="@+id/edu_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
             </TableRow>
@@ -525,7 +535,8 @@
                 <TextView
                     android:id="@+id/assets_sum"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
             </TableRow>
@@ -540,34 +551,34 @@
 
         <TableLayout
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_marginTop="10dp">
 
             <TableRow
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/shape_outer_frame">
 
                 <TextView
-                    android:layout_height="match_parent"
                     android:layout_width="wrap_content"
-                    android:text="@string/item"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/shape_outer_frame"
-                    android:paddingRight="20dp"
                     android:paddingLeft="10dp"
-                    android:textSize="25dp"/>
+                    android:paddingRight="10dp"
+                    android:text="@string/item"
+                    android:textSize="25dp" />
 
                 <TextView
-                    android:layout_width="204dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/shape_outer_frame"
                     android:paddingLeft="10dp"
                     android:text="@string/formula"
                     android:textSize="25dp" />
 
                 <TextView
-                    android:layout_width="132dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/shape_outer_frame"
                     android:paddingLeft="10dp"
                     android:text="@string/point"
@@ -575,8 +586,326 @@
 
             </TableRow>
 
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:text="@string/San"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/POW"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/pow"
+                    android:layout_width="112dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textSize="17dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/luck"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="88dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/POW"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/luck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:textSize="17dp"
+                    android:text=""/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/idea"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/INT"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/idea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:textSize="17dp"
+                    android:text=""/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/knowledge"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/EDU"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/knowledge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:textSize="17dp"
+                    android:text=""/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/Durability"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="62dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/Dur"
+                    android:textSize="17dp"
+                    android:background="@drawable/shape_outer_frame"/>
+
+                <TextView
+                    android:id="@+id/Dur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:textSize="17dp"
+                    android:text=""/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/magicPoint"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="62dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/shape_outer_frame"
+                    android:text="@string/magic"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/magic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:textSize="17dp"
+                    android:text=""/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/Occupational_Skill_Points"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/shape_outer_frame"
+                    android:text="@string/Edu"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/OSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:textSize="17dp"
+                    android:text=""/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/Hobby_Skill_Points"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/shape_outer_frame"
+                    android:text="@string/INt"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/hobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:textSize="17dp"
+                    android:text=""/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_outer_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/damage"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:background="@drawable/shape_outer_frame"
+                    android:text="@string/DMG"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/DMG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_outer_frame"
+                    android:paddingLeft="10dp"
+                    android:textSize="17dp"
+                    android:text=""/>
+
+            </TableRow>
+
         </TableLayout>
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/nametext"
+            android:inputType="text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/save"/>
 
     </LinearLayout>
 </ScrollView>
