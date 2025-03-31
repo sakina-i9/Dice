@@ -25,7 +25,6 @@
         <activity
             android:name=".CharacterSheetActivity"
             android:exported="false"/>
-
     </application>
 
 </manifest>
