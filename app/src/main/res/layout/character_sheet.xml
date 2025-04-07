@@ -117,7 +117,9 @@
                     android:id="@+id/str_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:background="@drawable/shape_outer_frame"
+                    android:textSize="20dp"
                     android:text="" />
 
             </TableRow>
@@ -171,6 +173,8 @@
                     android:id="@+id/con_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:background="@drawable/shape_outer_frame"
                     android:text="" />
             </TableRow>
@@ -224,6 +228,8 @@
                     android:id="@+id/pow_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
@@ -278,6 +284,8 @@
                     android:id="@+id/dex_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
@@ -329,9 +337,11 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/App_sum"
+                    android:id="@+id/app_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
@@ -377,9 +387,11 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/app_sum"
+                    android:id="@+id/siz_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
@@ -428,6 +440,8 @@
                     android:id="@+id/Int_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
@@ -482,6 +496,8 @@
                     android:id="@+id/edu_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
@@ -536,6 +552,8 @@
                     android:id="@+id/assets_sum"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:background="@drawable/shape_outer_frame"
                     android:text="" />
 
